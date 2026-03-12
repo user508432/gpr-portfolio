@@ -211,6 +211,32 @@ button:hover {
 }
 
 /* ===================================
+   FORM VALIDATION STYLES
+   =================================== */
+.error-msg {
+    display: none;
+    color: #dc3545;
+    font-size: 0.85rem;
+    margin-top: -15px;
+    margin-bottom: 10px;
+}
+
+input.input-error,
+textarea.input-error {
+    border-color: #dc3545;
+}
+
+.form-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 12px 16px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* ===================================
    FOOTER
    =================================== */
 footer {

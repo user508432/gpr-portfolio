@@ -3,279 +3,411 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal Portfolio - Web Developer">
-    <title>My Portfolio - Web Developer</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Explore Beautiful Tourist Places in India">
+    <title>Indian Tourist Places</title>
+    <link rel="stylesheet" href="tourist-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav>
         <div class="container">
-            <div class="logo">MyPortfolio</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li> 
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <h2>Incredible India</h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#places">Places</a></li>
+                <li><a href="#attractions">Attractions</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#booking">Book Tour</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">Hi, I'm <span class="highlight">G. Pranav</span></h1>
-                <p class="hero-subtitle">Web Developer & Designer</p>
-                <p class="hero-description">Creating beautiful and functional websites with modern technologies</p>
-                <a href="#contact" class="btn btn-primary">Get In Touch</a>
-            </div>  
+    <!-- Home Section -->
+    <section id="home">
+        <div class="home-overlay"></div>
+        <div class="container home-content">
+            <h1>Explore Incredible India</h1>
+            <p>Discover the most beautiful tourist destinations across India</p>
+            <p>From historic monuments to natural wonders</p>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- About Tourism -->
+    <section id="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I am a passionate web developer with expertise in creating responsive and user-friendly websites. I love turning ideas into reality through clean code and creative design.</p>
-                    <p>With a strong foundation in HTML, CSS, and web development principles, I focus on building accessible and performant web applications that provide excellent user experiences.</p>
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <h3>10+</h3>
-                            <p>Projects Completed</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3>2+</h3>
-                            <p>Years Experience</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3>5+</h3>
-                            <p>Happy Clients</p>
-                        </div>
+            <h2>About Indian Tourism</h2>
+            <p>India is a land of diverse cultures, traditions, and landscapes. From the snow-capped Himalayas in the north to the tropical beaches in the south, India offers something for every traveler.</p>
+            <p>With UNESCO World Heritage Sites, ancient temples, modern cities, and wildlife sanctuaries, India is one of the most visited countries in the world.</p>
+            <div class="stats-grid">
+                <div class="stat-box"><h3>40+</h3><p>UNESCO Sites</p></div>
+                <div class="stat-box"><h3>28</h3><p>States</p></div>
+                <div class="stat-box"><h3>1000+</h3><p>Tourist Places</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tourist Places Section -->
+    <section id="places">
+        <div class="container">
+            <h2>Popular Tourist Places</h2>
+            <div class="places-grid">
+
+                <article class="place-card">
+                    <div class="place-image" style="background-image: url('https://images.unsplash.com/photo-1564507592333-c60657eea523?w=600&q=80&fit=crop');">
+                        <span class="place-label">Taj Mahal</span>
+                    </div>
+                    <div class="place-body">
+                        <h3>Taj Mahal, Agra</h3>
+                        <p><strong>Location:</strong> Uttar Pradesh</p>
+                        <p>One of the Seven Wonders of the World, this white marble monument is a symbol of love built by Emperor Shah Jahan.</p>
+                        <p><strong>Best Time:</strong> October to March</p>
+                    </div>
+                </article>
+
+                <article class="place-card">
+                    <div class="place-image" style="background-image: url('https://images.unsplash.com/photo-1477587458883-47145ed94245?w=600&q=80&fit=crop');">
+                        <span class="place-label">Jaipur</span>
+                    </div>
+                    <div class="place-body">
+                        <h3>Jaipur – Pink City</h3>
+                        <p><strong>Location:</strong> Rajasthan</p>
+                        <p>Known for its pink-colored buildings, magnificent forts, and royal palaces. Visit Hawa Mahal and Amber Fort.</p>
+                        <p><strong>Best Time:</strong> November to February</p>
+                    </div>
+                </article>
+
+                <article class="place-card">
+                    <div class="place-image" style="background-image: url('https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=600&q=80&fit=crop');">
+                        <span class="place-label">Kerala</span>
+                    </div>
+                    <div class="place-body">
+                        <h3>Kerala Backwaters</h3>
+                        <p><strong>Location:</strong> Kerala</p>
+                        <p>Experience serene boat rides through palm-lined waterways. Known as "God's Own Country" for its natural beauty.</p>
+                        <p><strong>Best Time:</strong> September to March</p>
+                    </div>
+                </article>
+
+                <article class="place-card">
+                    <div class="place-image" style="background-image: url('https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=600&q=80&fit=crop');">
+                        <span class="place-label">Goa</span>
+                    </div>
+                    <div class="place-body">
+                        <h3>Goa Beaches</h3>
+                        <p><strong>Location:</strong> Goa</p>
+                        <p>Famous for beautiful beaches, Portuguese architecture, and vibrant nightlife. A perfect tropical getaway.</p>
+                        <p><strong>Best Time:</strong> November to February</p>
+                    </div>
+                </article>
+
+                <article class="place-card">
+                    <div class="place-image" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80&fit=crop');">
+                        <span class="place-label">Ladakh</span>
+                    </div>
+                    <div class="place-body">
+                        <h3>Ladakh</h3>
+                        <p><strong>Location:</strong> Jammu & Kashmir</p>
+                        <p>High-altitude desert with stunning monasteries, crystal-clear lakes, and adventure activities.</p>
+                        <p><strong>Best Time:</strong> May to September</p>
+                    </div>
+                </article>
+
+                <article class="place-card">
+                    <div class="place-image" style="background-image: url('https://images.unsplash.com/photo-1561731216-c3a4d99437d5?w=600&q=80&fit=crop');">
+                        <span class="place-label">Varanasi</span>
+                    </div>
+                    <div class="place-body">
+                        <h3>Varanasi</h3>
+                        <p><strong>Location:</strong> Uttar Pradesh</p>
+                        <p>One of the oldest living cities in the world. Famous for its ghats along the holy river Ganges.</p>
+                        <p><strong>Best Time:</strong> October to March</p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Attractions Section -->
+    <section id="attractions">
+        <div class="container">
+            <h2>Types of Attractions</h2>
+            <div class="attractions-grid">
+
+                <div class="attraction-box" style="background-image: url('https://images.unsplash.com/photo-1587474260584-136574528ed5?w=700&q=80&fit=crop');">
+                    <div class="attraction-overlay">
+                        <h3>Historical Monuments</h3>
+                        <p>Red Fort, Qutub Minar, India Gate, Mysore Palace</p>
                     </div>
                 </div>
-                <div class="about-image">
-                    <div class="image-placeholder">
-                        <p>Your Photo</p>
+
+                <div class="attraction-box" style="background-image: url('https://images.unsplash.com/photo-1514222134-b57cbb8ce073?w=700&q=80&fit=crop');">
+                    <div class="attraction-overlay">
+                        <h3>Religious Sites</h3>
+                        <p>Golden Temple, Tirupati, Vaishno Devi, Ajmer Sharif</p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">My Skills</h2>
-            <div class="skills-grid">
-                <article class="skill-card">
-                    <div class="skill-icon">HTML</div>
-                    <h3>HTML5</h3>
-                    <p>Semantic markup and accessible web structure</p>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="--progress: 90%"></div>
-                    </div>
-                </article>
-                <article class="skill-card">
-                    <div class="skill-icon">CSS</div>
-                    <h3>CSS3</h3>
-                    <p>Modern styling with Flexbox and Grid</p>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="--progress: 85%"></div>
-                    </div>
-                </article>
-                <article class="skill-card">
-                    <div class="skill-icon">RWD</div>
-                    <h3>Responsive Design</h3>
-                    <p>Mobile-first and adaptive layouts</p>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="--progress: 80%"></div>
-                    </div>
-                </article>
-                <article class="skill-card">
-                    <div class="skill-icon">UI</div>
-                    <h3>UI/UX Design</h3>
-                    <p>User-centered design principles</p>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="--progress: 75%"></div>
-                    </div>
-                </article>
-                <article class="skill-card">
-                    <div class="skill-icon">A11Y</div>
-                    <h3>Accessibility</h3>
-                    <p>WCAG compliant web development</p>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="--progress: 80%"></div>
-                    </div>
-                </article>
-                <article class="skill-card">
-                    <div class="skill-icon">GIT</div>
-                    <h3>Version Control</h3>
-                    <p>Git and collaborative development</p>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="--progress: 70%"></div>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">My Projects</h2>
-            <div class="projects-grid">
-                <article class="project-card">
-                    <div class="project-image">
-                        <div class="placeholder">Project 1</div>
-                    </div>
-                    <div class="project-info">
-                        <h3>E-Commerce Website</h3>
-                        <p>A fully responsive online shopping platform with modern UI design and smooth animations.</p>
-                        <div class="project-tags">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">Responsive</span>
-                        </div>
-                    </div>
-                </article>
-                <article class="project-card">
-                    <div class="project-image">
-                        <div class="placeholder">Project 2</div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Restaurant Website</h3>
-                        <p>Beautiful landing page for a local restaurant with menu showcase and contact form.</p>
-                        <div class="project-tags">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS Grid</span>
-                            <span class="tag">Forms</span>
-                        </div>
-                    </div>
-                </article>
-                <article class="project-card">
-                    <div class="project-image">
-                        <div class="placeholder">Project 3</div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Portfolio Dashboard</h3>
-                        <p>Creative portfolio template with CSS animations and modern layout techniques.</p>
-                        <div class="project-tags">
-                            <span class="tag">Flexbox</span>
-                            <span class="tag">Animations</span>
-                            <span class="tag">CSS Variables</span>
-                        </div>
-                    </div>
-                </article>
-                <article class="project-card">
-                    <div class="project-image">
-                        <div class="placeholder">Project 4</div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Blog Platform</h3>
-                        <p>Clean and minimal blog layout with semantic HTML and accessibility features.</p>
-                        <div class="project-tags">
-                            <span class="tag">Semantic HTML</span>
-                            <span class="tag">Typography</span>
-                            <span class="tag">Accessible</span>
-                        </div>
-                    </div>
-                </article>
-                <article class="project-card">
-                    <div class="project-image">
-                        <div class="placeholder">Project 5</div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Landing Page</h3>
-                        <p>High-converting landing page with smooth scrolling and CSS transitions.</p>
-                        <div class="project-tags">
-                            <span class="tag">CSS</span>
-                            <span class="tag">Transitions</span>
-                            <span class="tag">Forms</span>
-                        </div>
-                    </div>
-                </article>
-                <article class="project-card">
-                    <div class="project-image">
-                        <div class="placeholder">Project 6</div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Corporate Website</h3>
-                        <p>Professional business website with multiple pages and contact functionality.</p>
-                        <div class="project-tags">
-                            <span class="tag">Multi-page</span>
-                            <span class="tag">Professional</span>
-                            <span class="tag">Responsive</span>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Let's Work Together</h3>
-                    <p>I'm always interested in hearing about new projects and opportunities. Feel free to reach out!</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <strong>Email:</strong>
-                            <p>your.email@example.com</p>
-                        </div>
-                        <div class="contact-item">
-                            <strong>Phone:</strong>
-                            <p>+91 1234567890</p>
-                        </div>
-                        <div class="contact-item">
-                            <strong>Location:</strong>
-                            <p>Hyderabad, India</p>
-                        </div>
+                <div class="attraction-box" style="background-image: url('https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=700&q=80&fit=crop');">
+                    <div class="attraction-overlay">
+                        <h3>Hill Stations</h3>
+                        <p>Shimla, Manali, Ooty, Darjeeling, Munnar</p>
                     </div>
                 </div>
-                <form class="contact-form" action="#" method="post">
-                    <div class="form-group">
-                        <label for="name">Your Name <span class="required">*</span></label>
-                        <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+                <div class="attraction-box" style="background-image: url('https://images.unsplash.com/photo-1561731216-c3a4d99437d5?w=700&q=80&fit=crop');">
+                    <div class="attraction-overlay">
+                        <h3>Wildlife Sanctuaries</h3>
+                        <p>Jim Corbett, Ranthambore, Kaziranga, Bandipur</p>
                     </div>
-                    <div class="form-group">
-                        <label for="email">Your Email <span class="required">*</span></label>
-                        <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </div>
+
+                <div class="attraction-box" style="background-image: url('https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=700&q=80&fit=crop');">
+                    <div class="attraction-overlay">
+                        <h3>Beaches</h3>
+                        <p>Goa, Andaman, Pondicherry, Varkala</p>
                     </div>
-                    <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10 digit number">
+                </div>
+
+                <div class="attraction-box" style="background-image: url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=700&q=80&fit=crop');">
+                    <div class="attraction-overlay">
+                        <h3>Adventure Sports</h3>
+                        <p>Rishikesh, Bir Billing, Gulmarg, Auli</p>
                     </div>
-                    <div class="form-group">
-                        <label for="subject">Subject <span class="required">*</span></label>
-                        <input type="text" id="subject" name="subject" required placeholder="What's this about?">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message <span class="required">*</span></label>
-                        <textarea id="message" name="message" rows="5" required placeholder="Your message here..."></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
+                </div>
+
             </div>
         </div>
     </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <div class="container">
+            <h2>Photo Gallery</h2>
+            <div class="gallery-grid">
+
+                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1564507592333-c60657eea523?w=800&q=80&fit=crop');">
+                    <div class="gallery-caption">Taj Mahal, Agra</div>
+                </div>
+
+                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1477587458883-47145ed94245?w=800&q=80&fit=crop');">
+                    <div class="gallery-caption">Jaipur – Pink City</div>
+                </div>
+
+                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80&fit=crop');">
+                    <div class="gallery-caption">Ladakh Landscapes</div>
+                </div>
+
+                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&q=80&fit=crop');">
+                    <div class="gallery-caption">Kerala Backwaters</div>
+                </div>
+
+                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1514222134-b57cbb8ce073?w=800&q=80&fit=crop');">
+                    <div class="gallery-caption">Golden Temple, Amritsar</div>
+                </div>
+
+                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800&q=80&fit=crop');">
+                    <div class="gallery-caption">Goa Beaches</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking">
+        <div class="container">
+            <h2>Book Your Tour</h2>
+            <form id="tourBookingForm" action="#" method="post" novalidate>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="1234567890">
+
+                <label for="destination">Select Destination:</label>
+                <select id="destination" name="destination" required>
+                    <option value="">Choose a place</option>
+                    <option value="agra">Taj Mahal, Agra</option>
+                    <option value="jaipur">Jaipur - Pink City</option>
+                    <option value="kerala">Kerala Backwaters</option>
+                    <option value="goa">Goa Beaches</option>
+                    <option value="ladakh">Ladakh</option>
+                    <option value="varanasi">Varanasi</option>
+                </select>
+
+                <label for="date">Travel Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="people">Number of People:</label>
+                <input type="number" id="people" name="people" min="1" max="50" required placeholder="1">
+
+                <label for="duration">Tour Duration:</label>
+                <select id="duration" name="duration" required>
+                    <option value="">Select duration</option>
+                    <option value="3">3 Days</option>
+                    <option value="5">5 Days</option>
+                    <option value="7">7 Days</option>
+                    <option value="10">10 Days</option>
+                    <option value="15">15 Days</option>
+                </select>
+
+                <label for="message">Special Requests:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Any special requirements..."></textarea>
+
+                <button type="submit" id="bookNowBtn">Book Now</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Confirmation Modal -->
+    <div id="confirmationModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-box">
+            <div class="modal-icon">✓</div>
+            <h2 id="modalTitle">Booking Confirmed!</h2>
+            <p class="modal-subtitle">Thank you for choosing Incredible India Tourism</p>
+            <div class="modal-details" id="modalDetails"></div>
+            <p class="modal-note">A confirmation email will be sent to your registered email address shortly. Our team will contact you within 24 hours.</p>
+            <button class="modal-close-btn" id="modalCloseBtn" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <script>
+        // Generate a random booking reference
+        function generateBookingRef() {
+            return 'IND-' + Math.random().toString(36).substring(2, 6).toUpperCase() + '-' + Date.now().toString().slice(-4);
+        }
+
+        // Destination display names
+        const destinationNames = {
+            agra: 'Taj Mahal, Agra',
+            jaipur: 'Jaipur - Pink City',
+            kerala: 'Kerala Backwaters',
+            goa: 'Goa Beaches',
+            ladakh: 'Ladakh',
+            varanasi: 'Varanasi'
+        };
+
+        // Format date nicely
+        function formatDate(dateStr) {
+            if (!dateStr) return '';
+            const [year, month, day] = dateStr.split('-');
+            const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+            return `${day} ${months[parseInt(month, 10) - 1]} ${year}`;
+        }
+
+        // Validate phone: exactly 10 digits
+        function isValidPhone(phone) {
+            return /^[0-9]{10}$/.test(phone.trim());
+        }
+
+        // Validate travel date is in the future
+        function isFutureDate(dateStr) {
+            if (!dateStr) return false;
+            return new Date(dateStr) > new Date();
+        }
+
+        // Show inline error
+        function showError(inputEl, message) {
+            inputEl.classList.add('input-error');
+            let err = inputEl.parentNode.querySelector('.field-error');
+            if (!err) {
+                err = document.createElement('span');
+                err.className = 'field-error';
+                inputEl.parentNode.insertBefore(err, inputEl.nextSibling);
+            }
+            err.textContent = message;
+        }
+
+        // Clear all errors
+        function clearErrors() {
+            document.querySelectorAll('.input-error').forEach(el => el.classList.remove('input-error'));
+            document.querySelectorAll('.field-error').forEach(el => el.remove());
+        }
+
+        // Close modal
+        function closeModal() {
+            document.getElementById('confirmationModal').classList.remove('modal-visible');
+            document.body.style.overflow = '';
+        }
+
+        // Close modal on overlay click
+        document.getElementById('confirmationModal').addEventListener('click', function(e) {
+            if (e.target === this) closeModal();
+        });
+
+        // Form submission
+        document.getElementById('tourBookingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            clearErrors();
+
+            const name        = document.getElementById('name');
+            const email       = document.getElementById('email');
+            const phone       = document.getElementById('phone');
+            const destination = document.getElementById('destination');
+            const date        = document.getElementById('date');
+            const people      = document.getElementById('people');
+            const duration    = document.getElementById('duration');
+
+            let valid = true;
+
+            if (!name.value.trim()) {
+                showError(name, 'Please enter your full name.');
+                valid = false;
+            }
+            if (!email.value.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())) {
+                showError(email, 'Please enter a valid email address.');
+                valid = false;
+            }
+            if (!isValidPhone(phone.value)) {
+                showError(phone, 'Please enter a valid 10-digit phone number.');
+                valid = false;
+            }
+            if (!destination.value) {
+                showError(destination, 'Please select a destination.');
+                valid = false;
+            }
+            if (!date.value || !isFutureDate(date.value)) {
+                showError(date, 'Please select a future travel date.');
+                valid = false;
+            }
+            if (!people.value || parseInt(people.value) < 1) {
+                showError(people, 'Please enter at least 1 person.');
+                valid = false;
+            }
+            if (!duration.value) {
+                showError(duration, 'Please select a tour duration.');
+                valid = false;
+            }
+
+            if (!valid) return;
+
+            // Build modal content
+            const bookingRef = generateBookingRef();
+            document.getElementById('modalDetails').innerHTML = `
+                <div class="detail-row"><span class="detail-label">Booking Ref</span><span class="detail-value booking-ref">${bookingRef}</span></div>
+                <div class="detail-row"><span class="detail-label">Name</span><span class="detail-value">${name.value.trim()}</span></div>
+                <div class="detail-row"><span class="detail-label">Destination</span><span class="detail-value">${destinationNames[destination.value]}</span></div>
+                <div class="detail-row"><span class="detail-label">Travel Date</span><span class="detail-value">${formatDate(date.value)}</span></div>
+                <div class="detail-row"><span class="detail-label">Travellers</span><span class="detail-value">${people.value} ${parseInt(people.value) === 1 ? 'Person' : 'People'}</span></div>
+                <div class="detail-row"><span class="detail-label">Duration</span><span class="detail-value">${duration.value} Days</span></div>
+            `;
+
+            // Show modal
+            document.getElementById('confirmationModal').classList.add('modal-visible');
+            document.body.style.overflow = 'hidden';
+
+            // Reset form
+            this.reset();
+        });
+    </script>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer>
         <div class="container">
-            <p>&copy; 2024 MyPortfolio. All rights reserved.</p>
-            <div class="social-links">
-                <a href="#" aria-label="LinkedIn">LinkedIn</a>
-                <a href="#" aria-label="GitHub">GitHub</a>
-                <a href="#" aria-label="Twitter">Twitter</a>
-            </div>
-        </div>
-    </footer>
-</body>
-</html>
+            <p>&copy; 2024 Incredible India Tourism. All rights reserved.</p>
+            <p>Contact: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0f666169604f66616c
